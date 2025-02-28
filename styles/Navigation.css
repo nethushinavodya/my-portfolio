@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 nav {
@@ -24,6 +25,7 @@ nav {
     padding: 20px 50px;
     background: #1e1e1e;
     justify-content: center;
+    z-index: 999;
 
 }
 
@@ -37,34 +39,38 @@ nav {
 
 .logo {
     font-size: 28px;
-    color: #ffffff;
+    color: deepskyblue;
     font-weight: bold;
     letter-spacing: 2px;
-    text-transform: uppercase;
-    cursor: pointer;
+    text-transform: inherit;
+    padding: 2px 30px;
 }
 
 .nav-bar {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 10px;
+    height: 50px;
+    padding: 15px;
+    width: 900px;
+    box-shadow: 0 4px 8px deepskyblue,0 6px 20px 0 rgba(0,0,0,0.18);
 }
 
 .nav-bar li a {
     text-decoration: none;
     color: #00d9ff;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 10px 15px;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 6px 30px;
     border: 2px solid transparent;
-    border-radius: 20px;
+    border-radius: 50px;
     transition: 0.3s ease-in-out;
 }
 
 .nav-bar li a:hover {
-    border: 2px solid #00d9ff;
+    border: 2px solid deepskyblue;
     color: #ffffff;
-    background: rgba(0, 217, 255, 0.2);
+    background: rgb(41, 67, 99);
 }
 
 .menu-icon {
@@ -86,6 +92,7 @@ nav {
     gap: 30px;
     background: rgba(23, 41, 66, 0.9);
     width: 100%;
+    height: fit-content;
     position: absolute;
     top: 100%;
     right: 0;
