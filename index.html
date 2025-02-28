@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>My-Portfolio</title>
+    <link rel="stylesheet" href="styles/Navigation.css">
 </head>
-<body>
-<!-- navigation bar -->
+<!-- Navigation Bar -->
 <nav>
-    <h1>Nethushi</h1>
-    <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Education</a></li>
-        <li><a href="">Projects</a></li>
-    </ul>
+    <div class="nav-container">
+        <h1 class="logo">Nethushi</h1>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="menu-icon">&#9776;</label>
+
+        <ul class="nav-bar">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </div>
 </nav>
+
 <!--Hero Section-->
 <header>
     <section id="hero">
@@ -50,7 +57,7 @@
     </section>
 </header>
 <!--About Me-->
-<main id="About">
+<main id="about">
     <section>
             <div>
                 <h1><u>About Me</u></h1>
