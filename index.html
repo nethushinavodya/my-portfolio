@@ -2,40 +2,64 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="styles/Navigation.css">
+    <link rel="stylesheet" href="styles/Home.css">
+
+    <title>My-Portfolio</title>
 </head>
 <!-- Navigation Bar -->
-<nav>
-    <div class="nav-container">
-        <h1 class="logo">Nethushi</h1>
+<header id="header">
+<!--    <h1 id="logo"><i class="fa-solid fa-input-text fa-flip">Nethushi</i></h1>-->
+        <div class="container">
+            <span style="--spa:1;">N</span>
+            <span style="--spa:2;">e</span>
+            <span style="--spa:3;">t</span>
+            <span style="--spa:4;">h</span>
+            <span style="--spa:5;">u</span>
+            <span style="--spa:6;">.</span>
+        </div>
+        <nav id="navigation">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+        </nav>
 
-        <input type="checkbox" id="menu-bar">
-        <label for="menu-bar" class="menu-icon">&#9776;</label>
+        <button id="menu">
+            <i class="fa-solid fa-bars" style="color: deepskyblue;"></i>
+        </button>
 
-        <ul class="nav-bar">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-    </div>
-</nav>
+</header>
 
 <!--Hero Section-->
-<header>
-    <section id="hero">
-        <div>
-            <h1>Hello I'm Nethushi</h1>
-            <div>
-                <span>Full Stack Developer</span>
-            </div>
-                <div>
-                    <button>Lets Talk</button>
-                    <button>Explore my work</button>
+<main id="hero">
+    <section id="sec">
+        <div id="div1">
+            <div id="div2">
+                <div id="div3">
+                    <div id="div4">
+                        <div id="div5">
+                            <div id="center">
+                                <h1 id="hello">Hello I'm Nethushi</h1>
+                                <div>
+                                    <span>Full Stack Developer</span>
+                                </div>
+                                <div class="button_container">
+                                    <button class="hero_button">Lets Talk</button>
+                                    <button class="hero_button">Explore my work</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
         </div>
+    </section>
+
         <div>
             <ul>
                 <li>ideate</li>
@@ -51,11 +75,10 @@
                 <li>Leaner</li>
             </ul>
         </div>
-        <div>
+        <div id="scroll">
             <button>Scroll Down</button>
         </div>
-    </section>
-</header>
+</main>
 <!--About Me-->
 <main id="about">
     <section>
@@ -75,7 +98,7 @@
                 </div>
             </div>
         <div>
-            <img src="assests/my4to.jpeg" width="100" height="100">
+            <img src="assets/images/my4to.jpeg" width="100" height="100">
         </div>
     </section>
 </main>
@@ -87,14 +110,14 @@
         </div>
         <div>
             <ul>
-                <li><img src="assests/HTML.png" width="30" height="30">Html</li>
-                <li><img src="assests/CSS.png" width="30" height="30">CSS</li>
-                <li><img src="assests/JS.png" width="30" height="30">JavaScript</li>
-                <li><img src="assests/MySQL.png" width="30" height="30">My SQl</li>
-                <li><img src="assests/Java.png" width="30" height="30">Java</li>
-                <li><img src="assests/Git.png" width="30" height="30">GitHub</li>
-                <li><img src="assests/VS.png" width="30" height="30">VS-Code</li>
-                <li><img src="assests/Capcut.png" width="30" height="30">Capcut</li>
+                <li><img src="assets/images/HTML.png" width="30" height="30">Html</li>
+                <li><img src="assets/images/CSS.png" width="30" height="30">CSS</li>
+                <li><img src="assets/images/JS.png" width="30" height="30">JavaScript</li>
+                <li><img src="assets/images/MySQL.png" width="30" height="30">My SQl</li>
+                <li><img src="assets/images/Java.png" width="30" height="30">Java</li>
+                <li><img src="assets/images/Git.png" width="30" height="30">GitHub</li>
+                <li><img src="assets/images/VS.png" width="30" height="30">VS-Code</li>
+                <li><img src="assets/images/Capcut.png" width="30" height="30">Capcut</li>
             </ul>
         </div>
     </section>
@@ -106,7 +129,7 @@
             <h1><u>Education</u></h1>
         </div>
         <div>
-            <img src="assests/nakano.png" width="50" height="50">
+            <img src="assets/images/nakano.png" width="50" height="50">
             <span><b>Nakano College</b></span><br>
             <span>Bandaragama</b></span>
             <ul>
@@ -114,7 +137,7 @@
             </ul>
         </div>
         <div>
-            <img src="assests/ijse.png" width="50" height="50">
+            <img src="assets/images/ijse.png" width="50" height="50">
             <span><b>Institute of Software Engineering</b></span><br>
             <span><b>Panadura</b></span>
             <ul>
@@ -122,7 +145,7 @@
             </ul>
         </div>
         <div>
-            <img src="assests/stjohn.png" width="50" height="50">
+            <img src="assets/images/stjohn.png" width="50" height="50">
             <span><b>St John's Girls School</b></span><br>
             <span><b>Panadura</b></span>
             <ul>
@@ -130,7 +153,7 @@
             </ul>
         </div>
         <div>
-            <img src="assests/Esoft.png" width="50" height="50">
+            <img src="assets/images/Esoft.png" width="50" height="50">
             <span><b>Esoft Metro Campus</b></span><br>
             <span><b>Panadura</b></span>
             <ul>
@@ -143,7 +166,7 @@
 <main id="projects">
     <section>
         <div>
-            <img src="assests/Stock.png">
+            <img src="assets/images/Stock.png">
             <div>
                 <ul>
                     <li>Stock Management System</li>
@@ -153,7 +176,7 @@
             </div>
         </div>
         <div>
-            <img src="assests/hotel.png">
+            <img src="assets/images/hotel.png">
             <div>
                 <ul>
                     <li>Hotel Management System(MVC)</li>
@@ -163,7 +186,7 @@
             </div>
         </div>
         <div>
-            <img src="assests/hotel.png">
+            <img src="assets/images/hotel.png">
             <div>
                 <ul>
                     <li>Hotel Management System(Layered</li>
