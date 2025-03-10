@@ -41,7 +41,7 @@
     color: white;
 }
 
-span {
+#home-span {
     font-size: 2vw;
     color: #00bcd4;
     display: block;
@@ -51,22 +51,21 @@ span {
 /* Buttons */
 .button_container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two buttons in a row by default */
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    width: 300px; /* Fixed width to maintain button size */
-    height: 100px; /* Fixed height to maintain button size */
+    width: 300px;
+    height: 100px;
 }
 
-/* Ensuring buttons stay aligned */
 .hero_button {
-    border-radius: 20px; /* Consistent border-radius */
+    border-radius: 20px;
     cursor: pointer;
-    font-size: 1rem; /* Fixed font size */
+    font-size: 1rem;
     transition: 0.3s;
     text-align: center;
-    padding: 10px 20px; /* Consistent padding */
-    width: 150px; /* Fixed width */
-    height:40px; /* Fixed height */
+    padding: 10px 20px;
+    width: 150px;
+    height:40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +82,6 @@ span {
     color: #00bcd4;
 }
 
-/* Responsive Design */
 @media (max-width: 800px) {
     #center {
         width: 50vw;
@@ -92,10 +90,9 @@ span {
         min-height: 120px;
     }
 
-    /* Stack buttons vertically on small screens */
     .button_container {
-        grid-template-columns: 1fr; /* Single column */
-        grid-template-rows: repeat(2, auto); /* Two rows */
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
     }
     .hero_button {
         width: 150px; /* Adjusted width */

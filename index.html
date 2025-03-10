@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="styles/Navigation.css">
     <link rel="stylesheet" href="styles/Home.css">
+    <link rel="stylesheet" href="styles/About.css">
 
     <title>My-Portfolio</title>
 </head>
@@ -46,7 +47,7 @@
                             <div id="center">
                                 <h1 id="hello">Hello I'm Nethushi</h1>
                                 <div>
-                                    <span>Full Stack Developer</span>
+                                    <span id="home-span">Full Stack Developer</span>
                                 </div>
                                 <div class="button_container">
                                     <button class="hero_button">Lets Talk</button>
@@ -58,8 +59,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
         <div>
             <ul>
                 <li>ideate</li>
@@ -78,29 +77,34 @@
         <div id="scroll">
             <button>Scroll Down</button>
         </div>
+    </section>
+
+
 </main>
 <!--About Me-->
 <main id="about">
-    <section>
-            <div>
-                <h1><u>About Me</u></h1>
-                <p>Hi, I’m <span><b>Nethushi Navodya</b></span> currently studying at IJSE, focusing on Java and MySQL. These skills have helped me build a strong foundation in programming and database management. I’m passionate about technology and dedicated to mastering the skills needed to become a proficient software engineer.</p>
-            </div>
-            <div>
-                <button>Contact</button>
-                <div>
-                    <ul>
-                        <li><a href="https://github.com/nethushinavodya">github</a></li>
-                        <li><a href="https://www.instagram.com/_nethushi_navodya_?igsh=MWJ6em5lczNhOGQxYQ==">Instagram</a></li>
-                        <li><a href="https://www.linkedin.com/in/nethushi-perera-b04763231/">Linkedin</a> </li>
-                        <li><a href="https://www.facebook.com/profile.php?id=100081924263365">Facebook</a> </li>
-                    </ul>
-                </div>
-            </div>
-        <div>
+        <div id="content-left">
             <img src="assets/images/my4to.jpeg" width="100" height="100">
         </div>
-    </section>
+    <div id="content-right">
+        <div id="about-me">
+            <h1><u>About Me</u></h1>
+            <p id="para">Hi, I’m <span>Nethushi Navodya</span> currently studying at IJSE, focusing on Java and MySQL. These skills have helped me build a strong foundation in programming and database management. I’m passionate about technology and dedicated to mastering the skills needed to become a proficient software engineer.</p>
+        </div>
+      <div id="contact-link">
+        <div id="contact">
+            <button>Contact</button>
+        </div>
+            <div id="link">
+                <ul>
+                    <li><a href="https://github.com/nethushinavodya"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/_nethushi_navodya_?igsh=MWJ6em5lczNhOGQxYQ=="><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/nethushi-perera-b04763231/"><i class="fab fa-linkedin-in"></i></a> </li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100081924263365"><i class="fab fa-twitter"></i></a> </li>
+                </ul>
+            </div>
+      </div>
+    </div>
 </main>
 <!-- My Skill -->
 <main id="skills">
