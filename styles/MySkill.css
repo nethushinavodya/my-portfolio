@@ -1,0 +1,117 @@
+/* Skills Section */
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 1300px;
+    height: auto;
+    background-color: #171820;
+    border-radius: 400px 0 0 0;
+    position: relative;
+    margin: 100px 0 100px auto;
+    padding: 30px 20px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.skills-header h1 {
+    gap: 40px;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+}
+
+.underline {
+    width: 80px;
+    height: 4px;
+    background-color: deepskyblue;
+    margin: 10px auto;
+}
+
+/* Skills Container */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+/* Skill Card */
+.skill-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%; /* Full width of grid column */
+    height: 70px;
+    background-color: #000000;
+    border-radius: 10px;
+    border: 2px solid deepskyblue;
+    box-shadow: 5px 5px 15px rgba(0, 191, 255, 0.2);
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: scale(1.25);
+}
+
+/* Skill Icons */
+.skill-card img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Skill Names */
+.skill-card p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Responsive Grid Layout */
+@media (max-width: 1024px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    #skills {
+        width: 80vw;
+    }
+
+    .skill-card {
+        height: 65px;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #skills {
+        width: 75vw;
+
+    }
+
+    .skill-card {
+        height: 60px;
+    }
+}
