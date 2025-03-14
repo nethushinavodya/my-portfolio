@@ -1,0 +1,162 @@
+#assignment{
+    width: 100%;
+    overflow-x: hidden;
+}
+#education>h2{
+    text-align: center;
+    color: aqua;
+    font-size: 100px;
+}
+#education>section{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.vertical {
+    border-left: 5px solid white;
+    height: 1083px;
+}
+.circle:nth-child(n+2):nth-child(-n+6) {
+    margin-top: 200px;
+}
+#first_row div ul,img{
+    position: relative;
+    z-index: 2;
+}
+#second_row div ul,img{
+    position: relative;
+    z-index: 2;
+}
+
+
+.circle{
+    margin-left: -10.2px;
+    width: 15px;
+    height: 15px;
+    background: aqua;
+    border-radius: 100%;
+}
+
+#education>section>div>img{
+    width: 50px;
+}
+#education section div div img{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#education section div div ul li:nth-child(2){
+    list-style: none;
+    color: #8B8787;
+}
+#education section div div ul li{
+    padding-bottom:5px ;
+}
+
+#ijse img{
+    width: 50px;
+    height: 20px;
+}
+
+/*.colorfill {
+    box-shadow: 0px 3px 5px 0px rgb(95, 96, 96);
+    padding: 10px;
+    border-radius: 30px;
+    max-width: 220px;
+    min-width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+
+}*/
+
+
+.skillshadow{
+    box-shadow: 0px 3px 5px 0px rgb(95, 96, 96);
+    padding: 10px;
+    border-radius: 30px;
+    max-width: 400px;
+    min-width: 250px;
+    max-height: 200px;
+    min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.skillshadow:hover .shadow-bg {
+    transform: scale(10);
+}
+
+
+.skillshadow:hover ul li {
+    color: #ffffff;
+}
+
+#first_row {
+
+    margin-top: 140px;
+}
+#first_row div:nth-child(2){
+    margin-top: 270px;
+}
+#second_row{
+    margin-top: 350px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#second_row div:nth-child(2){
+    margin-top: 270px;
+}
+
+@media all and (max-width: 768px) {
+    #ss{
+        visibility: hidden;
+        display: none;
+    }
+    #education section{
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: -100px;
+    }
+    .skillshadow{
+        margin-bottom: 60px;
+    }
+
+    #first_row {
+        flex-basis: 20px;
+
+    }
+    #first_row div:nth-child(2){
+        margin-top: 0px;
+    }
+    #second_row{
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #second_row div:nth-child(2){
+        margin-top: 0px;
+    }
+
+}
+
+@media all and (max-width: 435px) {
+    .skillshadow {
+        box-shadow: 0px 3px 5px 0px rgb(95, 96, 96);
+        padding: 10px;
+        border-radius: 30px;
+        min-width: 150px;
+        max-height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #education h2 {
+        font-size: 50px;
+    }
+
+}
