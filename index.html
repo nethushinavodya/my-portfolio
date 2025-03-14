@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/Navigation.css">
     <link rel="stylesheet" href="styles/Home.css">
     <link rel="stylesheet" href="styles/About.css">
+    <link rel="stylesheet" href="styles/MySkill.css">
 
     <title>My-Portfolio</title>
 </head>
@@ -109,61 +110,110 @@
 <!-- My Skill -->
 <main id="skills">
     <section>
-        <div>
-            <h1><u>My Skills</u></h1>
+        <div class="skills-header">
+            <h1>MY <span>SKILLS</span></h1>
+            <div class="underline"></div>
         </div>
-        <div>
-            <ul>
-                <li><img src="assets/images/HTML.png" width="30" height="30">Html</li>
-                <li><img src="assets/images/CSS.png" width="30" height="30">CSS</li>
-                <li><img src="assets/images/JS.png" width="30" height="30">JavaScript</li>
-                <li><img src="assets/images/MySQL.png" width="30" height="30">My SQl</li>
-                <li><img src="assets/images/Java.png" width="30" height="30">Java</li>
-                <li><img src="assets/images/Git.png" width="30" height="30">GitHub</li>
-                <li><img src="assets/images/VS.png" width="30" height="30">VS-Code</li>
-                <li><img src="assets/images/Capcut.png" width="30" height="30">Capcut</li>
-            </ul>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="assets/images/HTML.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/images/CSS.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/images/JS.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/images/MySQL.png" alt="MySQL">
+                <p>MySQL</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/images/Java.png" alt="Java">
+                <p>Java</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/images/Git.png" alt="GitHub">
+                <p>GitHub</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/images/VS.png" alt="VS Code">
+                <p>VS Code</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/images/Capcut.png" alt="Capcut">
+                <p>Capcut</p>
+            </div>
+            <div class="skill-card">
+                <img src="assets/images/btstrap.png" alt="Bootstrap">
+                <p>Bootstrap</p>
+            </div>
         </div>
     </section>
 </main>
 <!--Education-->
 <main id="education">
+    <div>
+        <h1>Education</h1>
+    </div>
     <section>
-        <div>
-            <h1><u>Education</u></h1>
+
+        <div class="first_row">
+            <div class="shadow-box">
+                <div class="shadow-bg"></div>
+                <img src="assets/images/nakano.png">
+                <ul>
+                    <li>Nakano College</li><br>
+                    <li>Bandaragama</li>
+                    <li>Studied upto Ordinary Level</li>
+                </ul>
+            </div>
+
+            <div class="shadow-box">
+                <div class="shadow-bg"></div>
+                <img src="assets/images/stjohn.png" >
+                <ul>
+                    <li>St John's Girls School</li>
+                    <li>Panadura</li>
+                    <li>Studied upto Advanced Level</li>
+                </ul>
+            </div>
+
         </div>
-        <div>
-            <img src="assets/images/nakano.png" width="50" height="50">
-            <span><b>Nakano College</b></span><br>
-            <span>Bandaragama</b></span>
-            <ul>
-                <li>Studied upto Ordinary Level</li>
-            </ul>
+
+        <div class= "vertical" id="ss">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
         </div>
-        <div>
-            <img src="assets/images/ijse.png" width="50" height="50">
-            <span><b>Institute of Software Engineering</b></span><br>
-            <span><b>Panadura</b></span>
+
+    <div id="second_row">
+        <div id="ijse" class="shadow-box">
+            <div class="shadow-bg"></div>
+            <img src="assets/images/ijse.png">
             <ul>
+                <li>Institute of Software Engineering</li><br>
+                <li>Panadura</li>
                 <li>currently studying at the <b>IJSE</b> institute</li>
             </ul>
         </div>
-        <div>
-            <img src="assets/images/stjohn.png" width="50" height="50">
-            <span><b>St John's Girls School</b></span><br>
-            <span><b>Panadura</b></span>
+        <div class="shadow-box">
+            <div class="shadow-bg"></div>
+            <img src="assets/images/Esoft.png">
             <ul>
-                <li>Studied upto Advanced Level</li>
-            </ul>
-        </div>
-        <div>
-            <img src="assets/images/Esoft.png" width="50" height="50">
-            <span><b>Esoft Metro Campus</b></span><br>
-            <span><b>Panadura</b></span>
-            <ul>
+                <li><>Esoft Metro Campus</li>
+                <li>Panadura</li>
                 <li>Followed a course <b>Esoft</b> campus</li>
             </ul>
         </div>
+    </div>
+
     </section>
 </main>
 <!--Projects -->
