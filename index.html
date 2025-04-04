@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/lib/normalize.css">
-    <link rel="stylesheet" href="assets/lib/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/education.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/assignments.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="styles/Navigation.css">
-    <link rel="stylesheet" href="styles/Home.css">
-    <link rel="stylesheet" href="styles/About.css">
-    <link rel="stylesheet" href="styles/MySkill.css">
 
     <title>My-Portfolio</title>
 </head>
@@ -154,34 +159,37 @@
         </div>
     </section>
 </main>
-<!--Education-->
+
+<!-- Education section -->
 <main id="education">
-    <div>
-        <h1>Education</h1>
-    </div>
+
+    <h2 >Education</h2>
+
     <section>
 
-        <div class="first_row">
-            <div class="shadow-box">
+        <div id="first_row">
+            <div class="skillshadow boxtransition">
                 <div class="shadow-bg"></div>
-                <img src="assets/images/nakano.png">
+                <img src="assets/images/nakano.png" alt=""width="40">
                 <ul>
-                    <li>Nakano College</li><br>
+                    <li>Nakano College</li>
                     <li>Bandaragama</li>
                     <li>Studied upto Ordinary Level</li>
                 </ul>
             </div>
 
-            <div class="shadow-box">
+
+
+            <div class="skillshadow boxtransition">
                 <div class="shadow-bg"></div>
-                <img src="assets/images/stjohn.png" >
+
+                <img src="assets/images/stjohn.png" alt=""width="40">
                 <ul>
                     <li>St John's Girls School</li>
                     <li>Panadura</li>
                     <li>Studied upto Advanced Level</li>
                 </ul>
             </div>
-
         </div>
 
         <div class= "vertical" id="ss">
@@ -193,95 +201,134 @@
             <div class="circle"></div>
         </div>
 
-    <div id="second_row">
-        <div id="ijse" class="shadow-box">
-            <div class="shadow-bg"></div>
-            <img src="assets/images/ijse.png">
-            <ul>
-                <li>Institute of Software Engineering</li><br>
-                <li>Panadura</li>
-                <li>currently studying at the <b>IJSE</b> institute</li>
-            </ul>
-        </div>
-        <div class="shadow-box">
-            <div class="shadow-bg"></div>
-            <img src="assets/images/Esoft.png">
-            <ul>
-                <li><>Esoft Metro Campus</li>
-                <li>Panadura</li>
-                <li>Followed a course <b>Esoft</b> campus</li>
-            </ul>
-        </div>
-    </div>
+        <div id="second_row">
+            <div id="ijse" class="skillshadow boxtransition" >
+                <div class="shadow-bg"></div>
 
+                <img src="assets/images/ijse.png" alt=""width="250">
+                <ul>
+                    <li>Institute of Software Engineering</li>
+                    <li>Panadura</li>
+                    <li>currently studying at the IJSE institute</li>
+                </ul>
+            </div>
+            <div class="skillshadow boxtransition" >
+                <div class="shadow-bg"></div>
+
+                <img src="assets/images/Esoft.png" alt="" width="40">
+                <ul id="esoft">
+                    <li>Esoft Metro Campus</li>
+                    <li>Panadura</li>
+                    <li>Followed a course Esoft campus</li>
+                </ul>
+            </div>
+
+        </div>
     </section>
 </main>
+
 <!--Projects -->
 <main id="projects">
     <section>
         <div>
-            <img src="assets/images/Stock.png">
-            <div>
-                <ul>
-                    <li>Stock Management System</li>
-                    <li>Java Language Based Project</li>
-                    <li>Terminal</li>
-                </ul>
-            </div>
+            <img src="assets/images/Stock.png" alt="Stock Management System">
+            <ul>
+                <li>Stock Management System</li>
+                <li>Java Language Based Project</li>
+                <li>Terminal Application</li>
+            </ul>
         </div>
         <div>
-            <img src="assets/images/hotel.png">
-            <div>
-                <ul>
-                    <li>Hotel Management System(MVC)</li>
-                    <li>Java Language Based Project</li>
-                    <li>Applied MVC Architecture</li>
-                </ul>
-            </div>
+            <img src="assets/images/hotel.png" alt="Hotel Management System (MVC)">
+            <ul>
+                <li>Hotel Management System (MVC)</li>
+                <li>Java Language Based Project</li>
+                <li>Applied MVC Architecture</li>
+            </ul>
         </div>
         <div>
-            <img src="assets/images/hotel.png">
-            <div>
-                <ul>
-                    <li>Hotel Management System(Layered</li>
-                    <li>Java Language Based Project</li>
-                    <li>Applied Layered Architecture</li>
-                </ul>
-            </div>
+            <img src="assets/images/hotel.png" alt="Hotel Management System (Layered)">
+            <ul>
+                <li>Hotel Management System (Layered)</li>
+                <li>Java Language Based Project</li>
+                <li>Applied Layered Architecture</li>
+            </ul>
         </div>
     </section>
 </main>
 <!--Contact Me-->
-<main id="contact me">
-    <section>
-        <div>
-            <form>
-                <label for="name">Name</label>
-                <input class="name" type="text" id="name"><br><br>
-                <label for="email">Email</label>
-                <input class="email" type="email" id="email"><br><br>
-                <label for="message">Message</label>
-                <textarea class="message" type="text" id="message">Message</textarea>
-                <div>
-                    <button>Submit</button>
-                </div>
-            </form>
+<main id="contact-page">
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Contact Me</h1>
+            <p>Let's connect and discuss how I can help you!</p>
         </div>
-        <div>
-            <span>Contact Me</span>
-            <div>
-                <ul>
-                    <li><a href="https://github.com/nethushinavodya">github</a></li>
-                    <li><a href="https://www.instagram.com/_nethushi_navodya_?igsh=MWJ6em5lczNhOGQxYQ==">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/in/nethushi-perera-b04763231/">Linkedin</a> </li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100081924263365">Facebook</a> </li>
-                </ul>
+
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <div class="info-section">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>nethushiperera03@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Panadura, Western Province, Sri Lanka</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/nethushinavodya" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nethushi-perera-b04763231/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_nethushi_navodya_" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100081924263365" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-        <span>nethushiperera03@gmail.com</span>
-    </section>
-</main>
-<!--footer-->
+    </div>
+</main><!--footer-->
 <footer>
     <section id="footer">
         <p>© 2025 <span><b>Nethushi Navodya</b></span>. A passionate software engineer continuously learning and building innovative web solutions. Let's connect and create something awesome together!</p>

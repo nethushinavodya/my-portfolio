@@ -1,0 +1,103 @@
+/* styles/projects.css */
+#projects {
+    background-color: #0a0a0a;
+    color: #00bfff;
+    padding: 50px 20px;
+    width: 100%;
+}
+
+#projects section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#projects section > div {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    min-width: 250px;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+#projects section > div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 191, 255, 0.2);
+}
+
+#projects section > div img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#projects section > div ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#projects section > div ul li {
+    color: #00bfff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#projects section > div ul li:first-child {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Responsive Breakpoints */
+@media screen and (max-width: 1024px) {
+    #projects section > div {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #projects {
+        padding: 30px 10px;
+    }
+
+    #projects section > div {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    #projects section > div img {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #projects {
+        padding: 20px 5px;
+    }
+
+    #projects section > div {
+        padding: 15px;
+    }
+
+    #projects section > div img {
+        height: 200px;
+    }
+
+    #projects section > div ul li:first-child {
+        font-size: 1em;
+    }
+}
+
+/* Additional Hover and Focus States */
+#projects section > div:focus-within {
+    outline: 2px solid #00bfff;
+    outline-offset: 5px;
+}
