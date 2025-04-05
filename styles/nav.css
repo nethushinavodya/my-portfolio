@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #00bfff;
+    --secondary-color: #000000;
+    --accent-color: #00a0e4;
+    --text-color: #ffffff;
+    --text-secondary: #b3b3b3;
+    --transition-speed: 0.3s;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +15,9 @@
 }
 
 body {
-    background: #000;
-    color: #fff;
-    overflow: hidden;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    overflow-x: hidden;
 }
 
 .container {
@@ -20,18 +29,17 @@ body {
 nav {
     position: fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0);
     backdrop-filter: blur(10px);
     z-index: 1000;
-    padding: 10px 0;
+    padding: 20px 0;
     border-bottom: 1px solid rgba(0, 191, 255, 0.2);
-    transition: all 0.3s ease;
+    transition: all var(--transition-speed) ease;
 }
 
 nav.scrolled {
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0, 191, 255, 0.5);
+    padding: 15px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 nav .container {
@@ -40,90 +48,80 @@ nav .container {
     align-items: center;
 }
 
-nav .logo {
+.logo {
     font-size: 24px;
     font-weight: 700;
-    color: #00bfff;
+    color: var(--primary-color);
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
-    padding-right: 10px;
 }
 
 .logo::after {
-    content: '';
+    content: "";
     position: absolute;
-    bottom: -1px;
+    bottom: -5px;
     left: 0;
     width: 50%;
     height: 2px;
-    background-color: #ffffff;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: width 0.3s ease;
+    background-color: var(--primary-color);
+    transition: width var(--transition-speed) ease;
 }
 
 .logo:hover::after {
-    transform: scaleX(1);
     width: 100%;
 }
 
-.menu{
+.menu {
     display: flex;
+    gap: 30px;
     list-style: none;
-    gap: 20px;
 }
 
 .menu li {
     position: relative;
-    cursor: pointer;
-    gap: 2px;
-    padding: 5px;
 }
 
 .menu a {
+    color: var(--text-color);
     text-decoration: none;
-    color: #fff;
     font-size: 16px;
-    transition: color 0.3s ease;
-    letter-spacing: 2px;
     font-weight: 500;
-
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color var(--transition-speed) ease;
 }
 
 .menu a:hover {
-    color: #00bfff;
+    color: var(--primary-color);
 }
 
 .menu a::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -5px;
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #00bfff;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: width 0.3s ease;
+    background-color: var(--primary-color);
+    transition: width var(--transition-speed) ease;
 }
 
 .menu a:hover::after {
-    transform: scaleX(1);
     width: 100%;
 }
 
 .menu-btn {
+    display: none;
     background: none;
     border: none;
     font-size: 24px;
-    color: #fff;
+    color: var(--text-color);
     cursor: pointer;
-    display: none;
 }
 
-/* Media Queries */
-@media (max-width: 830px) {
+/* Mobile Navigation */
+@media (max-width: 768px) {
     .menu {
         position: fixed;
         top: 70px;
@@ -148,7 +146,7 @@ nav .logo {
         text-align: center;
     }
 
-    .menu-a {
+    .menu a {
         display: block;
         padding: 10px 0;
     }
@@ -156,5 +154,4 @@ nav .logo {
     .menu-btn {
         display: block;
     }
-
 }

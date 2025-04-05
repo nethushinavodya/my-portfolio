@@ -1,8 +1,9 @@
+/* Home Section CSS */
 #home {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: #000000;
+    background-color: var(--secondary-color);
     position: relative;
     overflow: hidden;
 }
@@ -39,7 +40,7 @@
 }
 
 .home-text h1 span {
-    color: #00bfff;
+    color: var(--primary-color);
     position: relative;
     display: inline-block;
 }
@@ -51,7 +52,7 @@
     left: 0;
     width: 100%;
     height: 5px;
-    background-color: #00bfff;
+    background-color: var(--primary-color);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.5s ease;
@@ -65,17 +66,17 @@
 .home-text p {
     font-size: 24px;
     margin-bottom: 30px;
-    color: #b3b3b3;
+    color: var(--text-secondary);
     letter-spacing: 1px;
 }
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background: transparent;
-    color: #00bfff;
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: 500;
-    border: 2px solid #00bfff;
+    border: 2px solid var(--primary-color);
     border-radius: 30px;
     margin-right: 15px;
     transition: all 0.3s ease;
@@ -85,7 +86,7 @@
 }
 
 .btn:hover {
-    color: #0f0f0f;
+    color: var(--dark-bg);
 }
 
 .btn::before {
@@ -95,7 +96,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #00bfff;
+    background: var(--primary-color);
     transition: all 0.3s ease;
     z-index: -1;
 }
@@ -124,7 +125,7 @@
     right: -20px;
     width: 100%;
     height: 100%;
-    border: 4px solid #00bfff;
+    border: 4px solid var(--primary-color);
     border-radius: 20px;
     z-index: -1;
     animation: morphShape 8s linear infinite;
@@ -147,20 +148,20 @@
 }
 
 .scroll-prompt a {
-    color: #b3b3b3;
+    color: var(--text-secondary);
     text-decoration: none;
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    transition: color 0.3s ease;
+    transition: color var(--transition-speed) ease;
 }
 
 .scroll-prompt a:hover {
-    color: #00bfff;
+    color: var(--primary-color);
 }
 
 .scroll-prompt i {
-    color: #00bfff;
+    color: var(--primary-color);
     font-size: 20px;
     animation: bounce 2s infinite;
 }

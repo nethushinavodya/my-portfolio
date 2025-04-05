@@ -1,0 +1,76 @@
+/* Assignments Section Styles */
+#assignments {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#assignments img {
+    max-width: 150px;
+    display: block;
+    margin: -30px auto 50px;
+    opacity: 0.8;
+}
+
+.assignments-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.assignment-box {
+    background: rgba(10, 10, 10, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0, 191, 255, 0.1);
+}
+
+.assignment-box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+            to bottom right,
+            transparent,
+            transparent,
+            transparent,
+            rgba(0, 191, 255, 0.1),
+            transparent
+    );
+    transform: rotate(45deg);
+    transition: all 0.7s ease;
+}
+
+.assignment-box:hover::before {
+    transform: rotate(45deg) translate(50%, 50%);
+}
+
+.assignment-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 191, 255, 0.2);
+    border-color: rgba(0, 191, 255, 0.3);
+}
+
+.assignment-box h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.assignment-box p {
+    color: #a0a0a0;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.assignment-box .btn {
+    margin: 0 auto;
+}

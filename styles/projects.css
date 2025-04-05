@@ -1,103 +1,136 @@
-/* styles/projects.css */
+/* Projects Section CSS */
 #projects {
-    background-color: #0a0a0a;
-    color: #00bfff;
-    padding: 50px 20px;
+    padding: 100px 0;
+    background-color: var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+#projects::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, rgba(0, 191, 255, 0.05) 0%, transparent 50%, rgba(0, 191, 255, 0.05) 100%);
+    z-index: 0;
+}
+
+#projects img {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto 50px;
+}
+#projectImage{
+    animation: floatAnimation 4s ease-in-out infinite;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.project-card {
+    background-color: rgba(30, 30, 30, 0.6);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    border: 1px solid rgba(0, 191, 255, 0.1);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.8s ease both;
+}
+
+.project-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+    padding-top: 30px;
+    max-width: 100%;
+    height:200px;
+    animation: none;
+    align-items: first baseline;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    position: relative;
+    display: inline-block;
+}
+
+.project-info h3::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.project-card:hover h3::after {
     width: 100%;
 }
 
-#projects section {
+.project-info p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.project-tags {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-#projects section > div {
-    background-color: #1a1a1a;
-    border-radius: 10px;
-    padding: 20px;
-    width: calc(33.333% - 20px);
-    min-width: 250px;
-    max-width: 350px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 10px;
     margin-bottom: 20px;
-    box-sizing: border-box;
 }
 
-#projects section > div:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 191, 255, 0.2);
+.project-tags span {
+    padding: 5px 12px;
+    background-color: rgba(0, 191, 255, 0.1);
+    border-radius: 50px;
+    font-size: 12px;
+    color: var(--primary-color);
+    border: 1px solid rgba(0, 191, 255, 0.3);
 }
 
-#projects section > div img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
+.project-links {
+    display: flex;
+    gap: 15px;
 }
 
-#projects section > div ul {
-    list-style-type: none;
-    padding: 0;
+.project-links .btn {
+    padding: 8px 15px;
+    font-size: 14px;
 }
 
-#projects section > div ul li {
-    color: #00bfff;
-    margin-bottom: 10px;
-    text-align: center;
-}
+/* Stagger animation for project cards */
+.project-card:nth-child(1) { animation-delay: 0.1s; }
+.project-card:nth-child(2) { animation-delay: 0.3s; }
+.project-card:nth-child(3) { animation-delay: 0.5s; }
 
-#projects section > div ul li:first-child {
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-/* Responsive Breakpoints */
-@media screen and (max-width: 1024px) {
-    #projects section > div {
-        width: calc(50% - 20px);
+/* Responsive */
+@media (max-width: 768px) {
+    .projects-content {
+        grid-template-columns: 1fr;
     }
-}
-
-@media screen and (max-width: 768px) {
-    #projects {
-        padding: 30px 10px;
-    }
-
-    #projects section > div {
-        width: 100%;
-        max-width: 500px;
-    }
-
-    #projects section > div img {
-        height: 250px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #projects {
-        padding: 20px 5px;
-    }
-
-    #projects section > div {
-        padding: 15px;
-    }
-
-    #projects section > div img {
-        height: 200px;
-    }
-
-    #projects section > div ul li:first-child {
-        font-size: 1em;
-    }
-}
-
-/* Additional Hover and Focus States */
-#projects section > div:focus-within {
-    outline: 2px solid #00bfff;
-    outline-offset: 5px;
 }
