@@ -1,331 +1,436 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/lib/normalize.css">
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/skills.css">
-    <link rel="stylesheet" href="styles/education.css">
-    <link rel="stylesheet" href="styles/projects.css">
-    <link rel="stylesheet" href="styles/assignments.css">
-    <link rel="stylesheet" href="styles/contact.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/assignments.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <title>My-Portfolio</title>
+    <title>My Portfolio</title>
 </head>
-<!-- Navigation Bar -->
-<header id="header">
-    <nav>
-        <div class="container">
-            <div class="logo">Nethu</div>
-            <ul class="menu">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#assignments">Assignments</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="menu-btn">☰</button>
-        </div>
-    </nav>
-</header>
+<body>
+<!-- Navigation -->
+<nav>
+    <div class="container">
+        <div class="logo">Nethushi</div>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#assignments">Assignments</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu-btn">☰</button>
+    </div>
+</nav>
 
-<!--Hero Section-->
-<main id="hero">
-    <section id="home">
-        <div class="container">
-            <div class="home-content">
-                <div class="home-text">
-                    <h1>Hello, I'm <span>Nethushi Navodya</span></h1>
-                    <p>Full Stack Web Developer</p>
-                    <a href="#contact" class="btn">Let's Talk</a>
-                    <a href="#projects" class="btn">Explore my work</a>
-                </div>
-                <div class="home-img">
-                    <img src="assets/images/6.png">
-                </div>
+<!-- Home Section -->
+<section id="home">
+    <div class="container">
+        <div class="home-content">
+            <div class="home-text">
+                <h1>Hello, I'm <span>Nethushi Navodya</span></h1>
+                <p>Full Stack Developer</p>
+                <a href="#contact" class="btn">Let's Talk</a>
+                <a href="#projects" class="btn">Explore My Work</a>
+            </div>
+            <div class="home-img">
+                <img src="assets/images/6.png" >
             </div>
         </div>
-    </section>
+        <div class="scroll-prompt">
+            <button><a href="#about">Scroll Down</a></button>
+            <br>
+            <i class="fas fa-arrow-down"></i>
+        </div>
+    </div>
+</section>
 
-
-</main>
-<!--About Me-->
-<main>
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-img">
-                    <img src="assets/images/my4to.jpeg" alt="Nethushi Navodya">
-                </div>
-                <div class="about-text">
-                    <h3>Who Am I?</h3>
-                    <p>Hi, I'm <span>Nethushi Navodya</span> currently studying at IJSE, focusing on Java and MySQL. These skills have helped me build a strong foundation in programming and database management. I'm passionate about technology and dedicated to mastering the skills needed to become a proficient software engineer.</p>
-                    <div class="about-info">
-                        <div class="info-box">
-                            <span>Name:</span>
-                            <p>Nethushi Navodya</p>
-                        </div>
-                        <div class="info-box">
-                            <span>Email:</span>
-                            <p>nethushiperera03@gmail.com</p>
-                        </div>
-                        <div class="info-box">
-                            <span>Location:</span>
-                            <p>Panadura, Western Province, Sri Lanka</p>
-                        </div>
+<!-- About Me Section -->
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="assets/images/my4to.jpeg" alt="Nethushi Navodya">
+            </div>
+            <div class="about-text">
+                <h3>Who Am I?</h3>
+                <p>Hi, I'm <span>Nethushi Navodya</span> currently studying at IJSE, focusing on Java and MySQL. These skills have helped me build a strong foundation in programming and database management. I'm passionate about technology and dedicated to mastering the skills needed to become a proficient software engineer.</p>
+                <div class="about-info">
+                    <div class="info-box">
+                        <span>Name:</span>
+                        <p>Nethushi Navodya</p>
                     </div>
-                    <a href="cv.pdf" class="btn" download>Download CV</a>
-                    <div class="social-links">
-                        <a href="https://github.com/nethushinavodya"><i class="fab fa-github"></i></a>
-                        <a href="https://www.instagram.com/_nethushi_navodya_?igsh=MWJ6em5lczNhOGQxYQ=="><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/nethushi-perera-b04763231/"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=100081924263365"><i class="fab fa-facebook"></i></a>
+                    <div class="info-box">
+                        <span>Email:</span>
+                        <p>nethushiperera03@gmail.com</p>
+                    </div>
+                    <div class="info-box">
+                        <span>Location:</span>
+                        <p>Panadura, Western Province, Sri Lanka</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-</main>
-<!-- My Skill -->
-<main id="skills">
-    <section>
-        <div class="skills-header">
-            <h1>MY <span>SKILLS</span></h1>
-            <div class="underline"></div>
-        </div>
-        <div class="skills-container">
-            <div class="skill-card">
-                <img src="assets/images/HTML.png" alt="HTML">
-                <p>HTML</p>
-            </div>
-            <div class="skill-card">
-                <img src="assets/images/CSS.png" alt="CSS">
-                <p>CSS</p>
-            </div>
-            <div class="skill-card">
-                <img src="assets/images/JS.png" alt="JavaScript">
-                <p>JavaScript</p>
-            </div>
-            <div class="skill-card">
-                <img src="assets/images/MySQL.png" alt="MySQL">
-                <p>MySQL</p>
-            </div>
-            <div class="skill-card">
-                <img src="assets/images/Java.png" alt="Java">
-                <p>Java</p>
-            </div>
-            <div class="skill-card">
-                <img src="assets/images/Git.png" alt="GitHub">
-                <p>GitHub</p>
-            </div>
-            <div class="skill-card">
-                <img src="assets/images/VS.png" alt="VS Code">
-                <p>VS Code</p>
-            </div>
-            <div class="skill-card">
-                <img src="assets/images/Capcut.png" alt="Capcut">
-                <p>Capcut</p>
-            </div>
-            <div class="skill-card">
-                <img src="assets/images/btstrap.png" alt="Bootstrap">
-                <p>Bootstrap</p>
-            </div>
-        </div>
-    </section>
-</main>
-
-<!-- Education section -->
-<main id="education">
-
-    <h2 >Education</h2>
-
-    <section>
-
-        <div id="first_row">
-            <div class="skillshadow boxtransition">
-                <div class="shadow-bg"></div>
-                <img src="assets/images/nakano.png" alt=""width="40">
-                <ul>
-                    <li>Nakano College</li>
-                    <li>Bandaragama</li>
-                    <li>Studied upto Ordinary Level</li>
-                </ul>
-            </div>
-
-
-
-            <div class="skillshadow boxtransition">
-                <div class="shadow-bg"></div>
-
-                <img src="assets/images/stjohn.png" alt=""width="40">
-                <ul>
-                    <li>St John's Girls School</li>
-                    <li>Panadura</li>
-                    <li>Studied upto Advanced Level</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class= "vertical" id="ss">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-        </div>
-
-        <div id="second_row">
-            <div id="ijse" class="skillshadow boxtransition" >
-                <div class="shadow-bg"></div>
-
-                <img src="assets/images/ijse.png" alt=""width="250">
-                <ul>
-                    <li>Institute of Software Engineering</li>
-                    <li>Panadura</li>
-                    <li>currently studying at the IJSE institute</li>
-                </ul>
-            </div>
-            <div class="skillshadow boxtransition" >
-                <div class="shadow-bg"></div>
-
-                <img src="assets/images/Esoft.png" alt="" width="40">
-                <ul id="esoft">
-                    <li>Esoft Metro Campus</li>
-                    <li>Panadura</li>
-                    <li>Followed a course Esoft campus</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-</main>
-
-<!--Projects -->
-<main id="projects">
-    <section>
-        <div>
-            <img src="assets/images/Stock.png" alt="Stock Management System">
-            <ul>
-                <li>Stock Management System</li>
-                <li>Java Language Based Project</li>
-                <li>Terminal Application</li>
-            </ul>
-        </div>
-        <div>
-            <img src="assets/images/hotel.png" alt="Hotel Management System (MVC)">
-            <ul>
-                <li>Hotel Management System (MVC)</li>
-                <li>Java Language Based Project</li>
-                <li>Applied MVC Architecture</li>
-            </ul>
-        </div>
-        <div>
-            <img src="assets/images/hotel.png" alt="Hotel Management System (Layered)">
-            <ul>
-                <li>Hotel Management System (Layered)</li>
-                <li>Java Language Based Project</li>
-                <li>Applied Layered Architecture</li>
-            </ul>
-        </div>
-    </section>
-</main>
-<!--Contact Me-->
-<main id="contact-page">
-    <div class="contact-container">
-        <div class="contact-header">
-            <h1>Contact Me</h1>
-            <p>Let's connect and discuss how I can help you!</p>
-        </div>
-
-        <div class="contact-wrapper">
-            <div class="contact-form">
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-                </form>
-            </div>
-
-            <div class="contact-info">
-                <div class="info-section">
-                    <h3>Contact Information</h3>
-                    <div class="contact-details">
-                        <div class="detail-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>nethushiperera03@gmail.com</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Panadura, Western Province, Sri Lanka</span>
-                        </div>
-                    </div>
-                </div>
-
+                <a href="cv.pdf" class="btn" download>Download CV</a>
                 <div class="social-links">
-                    <h3>Connect With Me</h3>
-                    <div class="social-icons">
-                        <a href="https://github.com/nethushinavodya" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/nethushi-perera-b04763231/" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://www.instagram.com/_nethushi_navodya_" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/profile.php?id=100081924263365" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a>
+                    <a href="https://github.com/nethushinavodya"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/_nethushi_navodya_?igsh=MWJ6em5lczNhOGQxYQ=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/nethushi-perera-b04763231/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100081924263365"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <img id="image" src="assets/images/1.png">
+
+        <div class="skills-content">
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-img">
+                        <img src="assets/images/HTML.png" alt="HTML">
+                    </div>
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="90%"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-img">
+                        <img src="assets/images/CSS.png" alt="CSS">
+                    </div>
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="85%"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-img">
+                        <img src="assets/images/JS.png" alt="JavaScript">
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="75%"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-img">
+                        <img src="assets/images/Java.png" alt="Java">
+                    </div>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="80%"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-img">
+                        <img src="assets/images/MySQL.png" alt="MySQL">
+                    </div>
+                    <h3>MySQL</h3>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="80%"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-img">
+                        <img src="assets/images/Git.png" alt="GitHub">
+                    </div>
+                    <h3>GitHub</h3>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="70%"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-img">
+                        <img src="assets/images/VS.png" alt="VS Code">
+                    </div>
+                    <h3>VS Code</h3>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="85%"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-img">
+                        <img src="assets/images/btstrap.png" alt="Bootstrap">
+                    </div>
+                    <h3>Bootstrap</h3>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="75%"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-img">
+                        <img src="assets/images/Capcut.png" alt="Capcut">
+                    </div>
+                    <h3>Capcut</h3>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="70%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+        <img src="assets/images/7.png">
+        <div class="education-content">
+            <div class="education-box">
+                <div class="education-year">Present</div>
+                <h3>Institute of Software Engineering (IJSE)</h3>
+                <p>Panadura</p>
+                <p>Currently studying software engineering with a focus on Java development and database management.</p>
+            </div>
+
+            <div class="education-box">
+                <div class="education-year">2022</div>
+                <h3>St John's Girls School</h3>
+                <p>Panadura</p>
+                <p>Completed Advanced Level education with a focus on technology subjects.</p>
+            </div>
+
+            <div class="education-box">
+                <div class="education-year">2019</div>
+                <h3>Nakano College</h3>
+                <p>Bandaragama</p>
+                <p>Completed Ordinary Level education with strong results in core subjects.</p>
+            </div>
+
+            <div class="education-box">
+                <div class="education-year">2023</div>
+                <h3>Esoft Metro Campus</h3>
+                <p>Panadura</p>
+                <p>Completed specialized technical courses to supplement software engineering education.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <img id="projectImage" src="assets/images/8.png">
+        <div class="projects-content">
+            <div class="project-card">
+                <img src="assets/images/Stock.png" alt="Stock Management System">
+                <div class="project-info">
+                    <h3>Stock Management System</h3>
+                    <p>A terminal application for efficient stock management, built using Java.</p>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>Terminal Application</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Project</a>
+                        <a href="#" class="btn">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/images/hotel.png" alt="Hotel Management System (MVC)">
+                <div class="project-info">
+                    <h3>Hotel Management System (MVC)</h3>
+                    <p>A hotel management application built with Java using the MVC architecture pattern.</p>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>MVC Architecture</span>
+                        <span>Database</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Project</a>
+                        <a href="#" class="btn">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/images/hotel.png" alt="Hotel Management System (Layered)">
+                <div class="project-info">
+                    <h3>Hotel Management System (Layered)</h3>
+                    <p>A reimplementation of the hotel management system using layered architecture for improved scalability.</p>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>Layered Architecture</span>
+                        <span>Database</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Project</a>
+                        <a href="#" class="btn">Source Code</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</main><!--footer-->
-<footer>
-    <section id="footer">
-        <p>© 2025 <span><b>Nethushi Navodya</b></span>. A passionate software engineer continuously learning and building innovative web solutions. Let's connect and create something awesome together!</p>
-        <div>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">Projects</a></li>
-            </ul>
-        </div>
-        <p>All rights reserved. Software Engineer | Specializing in Java, HTML, CSS, JavaScript, and SQL · Passionate about creating innovative web solutions. </p>
-    </section>
+</section>
 
+<!-- Assignments Section -->
+<section id="assignments">
+    <div class="container">
+        <h2 class="section-title">Assignments</h2>
+        <img src="assets/images/2.png">
+        <div class="assignments-content">
+            <div class="assignment-box">
+                <h3>Assignment 1: Java Fundamentals</h3>
+                <p>Implemented core Java programming concepts through practical exercises.</p>
+                <a href="#" class="btn">View Assignment</a>
+            </div>
+
+            <div class="assignment-box">
+                <h3>Assignment 2: Database Design</h3>
+                <p>Created relational database schema and implemented queries for a business case study.</p>
+                <a href="#" class="btn">View Assignment</a>
+            </div>
+
+            <div class="assignment-box">
+                <h3>Assignment 3: Web Development</h3>
+                <p>Developed responsive web pages using HTML, CSS, and JavaScript.</p>
+                <a href="#" class="btn">View Assignment</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-box">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>nethushiperera03@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="contact-details">
+                        <h3>Location</h3>
+                        <p>Panadura, Western Province, Sri Lanka</p>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <h3>Follow Me</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/nethushinavodya" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/_nethushi_navodya_?igsh=MWJ6em5lczNhOGQxYQ==" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/nethushi-perera-b04763231/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100081924263365" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Nethushi</h3>
+                <p>Full Stack Developer</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Let's Connect</h3>
+                <p>Feel free to reach out for collaboration or questions</p>
+                <div class="social-icons">
+                    <a href="https://github.com/nethushinavodya"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/_nethushi_navodya_?igsh=MWJ6em5lczNhOGQxYQ=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/nethushi-perera-b04763231/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100081924263365"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nethushi Navodya. All Rights Reserved. Software Engineer | Specializing in Java, HTML, CSS, JavaScript, and SQL · Passionate about creating innovative web solutions.</p>
+        </div>
+    </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
