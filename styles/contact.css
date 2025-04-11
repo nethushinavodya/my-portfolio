@@ -1,13 +1,6 @@
-/* Contact Section Styles */
-:root {
-    --primary-color: #00bfff;
-    --dark-bg: #0f0f0f;
-    --light-text: #f0f0f0;
-}
-
 #contact {
     padding: 100px 0;
-    background-color: var(--dark-bg);
+    background-color: #0f0f0f;
     position: relative;
 }
 
@@ -15,7 +8,7 @@
     text-align: center;
     margin-bottom: 60px;
     font-size: 32px;
-    color: var(--primary-color);
+    color: #00bfff;
     position: relative;
 }
 
@@ -24,7 +17,7 @@
     position: absolute;
     width: 80px;
     height: 3px;
-    background-color: var(--primary-color);
+    background-color: #00bfff;
     bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
@@ -61,14 +54,14 @@
 
 .contact-box i {
     font-size: 24px;
-    color: var(--primary-color);
+    color: #00bfff;
     margin-top: 5px;
 }
 
 .contact-details h3 {
     font-size: 18px;
     margin-bottom: 5px;
-    color: var(--primary-color);
+    color: #00bfff;
 }
 
 .contact-details p {
@@ -92,7 +85,7 @@
 .contact-social h3 {
     font-size: 18px;
     margin-bottom: 15px;
-    color: var(--primary-color);
+    color: #00bfff;
 }
 
 .social-icons {
@@ -108,16 +101,16 @@
     height: 40px;
     border-radius: 50%;
     background-color: rgba(0, 191, 255, 0.1);
-    color: var(--primary-color);
+    color: #00bfff;
     font-size: 18px;
     transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-    background-color: var(--primary-color);
-    color: var(--dark-bg);
+    background-color: #00bfff;
+    color: #0f0f0f;
     transform: translateY(-5px);
-    box-shadow: 0 0 15px var(--primary-color);
+    box-shadow: 0 0 15px #00bfff;
 }
 
 .contact-form {
@@ -149,7 +142,7 @@
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-    color: var(--light-text);
+    color: #f0f0f0;
 }
 
 .input-group input,
@@ -159,7 +152,7 @@
     background-color: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(0, 191, 255, 0.2);
     border-radius: 5px;
-    color: var(--light-text);
+    color: #f0f0f0;
     font-size: 16px;
     transition: all 0.3s ease;
 }
@@ -167,7 +160,7 @@
 .input-group input:focus,
 .input-group textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
+    border-color:#00bfff;
     box-shadow: 0 0 10px rgba(0, 191, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.08);
 }
@@ -181,8 +174,8 @@
     width: 100%;
     text-align: center;
     padding: 12px 20px;
-    background-color: var(--primary-color);
-    color: var(--dark-bg);
+    background-color: #00bfff;
+    color: #0f0f0f;
     border: none;
     border-radius: 5px;
     font-size: 16px;
