@@ -11,7 +11,9 @@
     margin: -30px auto 50px;
     opacity: 0.8;
 }
-
+#assignmentImage{
+    animation: floatAnimation 4s ease-in-out infinite;
+}
 .assignments-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
