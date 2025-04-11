@@ -15,7 +15,7 @@ footer {
 .footer-logo h3 {
     font-size: 28px;
     margin-bottom: 15px;
-    color: var(--primary-color);
+    color: #00bfff;
     font-weight: 700;
     letter-spacing: 0.5px;
 }
@@ -42,7 +42,7 @@ footer {
     left: 0;
     width: 60px;
     height: 3px;
-    background: var(--primary-color);
+    background: #00bfff;
     border-radius: 2px;
 }
 
@@ -68,13 +68,13 @@ footer {
     content: '>';
     position: absolute;
     left: 0;
-    color: var(--primary-color);
+    color: #00bfff;
     font-size: 14px;
     transition: transform 0.3s;
 }
 
 .footer-links a:hover {
-    color: var(--primary-color);
+    color:#00bfff;
     transform: translateX(5px);
 }
 
@@ -102,7 +102,7 @@ footer {
     left: 0;
     width: 60px;
     height: 3px;
-    background: var(--primary-color);
+    background: #00bfff;
     border-radius: 2px;
 }
 
@@ -140,7 +140,7 @@ footer {
     font-size: 15px;
     font-weight: 600;
     border: none;
-    background-color: var(--primary-color);
+    background-color: #00bfff;
     color: white;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -148,7 +148,7 @@ footer {
 
 .footer-newsletter .btn:hover {
     background-color: #ffffff;
-    color: var(--primary-color);
+    color: #00bfff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
