@@ -33,7 +33,7 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     position: relative;
-    border-left: 3px solid var(--primary-color);
+    border-left: 3px solid #00bfff;
     overflow: hidden;
 }
 
@@ -57,7 +57,7 @@
     display: inline-block;
     padding: 5px 15px;
     background-color: rgba(0, 191, 255, 0.1);
-    color: var(--primary-color);
+    color: #00bfff;
     border-radius: 20px;
     font-size: 14px;
     font-weight: 500;
@@ -68,7 +68,7 @@
 .education-box h3 {
     font-size: 20px;
     margin-bottom: 5px;
-    color: var(--light-text);
+    color: #f0f0f0;
 }
 
 .education-box p {
@@ -79,7 +79,7 @@
 
 .education-box p:last-child {
     margin-bottom: 0;
-    color: var(--light-text);
+    color: #f0f0f0;
 }
 
 @media screen and (max-width: 992px) {
