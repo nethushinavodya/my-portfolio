@@ -15,8 +15,8 @@
 }
 
 body {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: #010017;
+    color: #ffffff;
     overflow-x: hidden;
 }
 
@@ -34,7 +34,7 @@ nav {
     z-index: 1000;
     padding: 20px 0;
     border-bottom: 1px solid rgba(0, 191, 255, 0.2);
-    transition: all var(--transition-speed) ease;
+    transition: all 0.3s ease;
 }
 
 nav.scrolled {
@@ -51,7 +51,7 @@ nav .container {
 .logo {
     font-size: 24px;
     font-weight: 700;
-    color: var(--primary-color);
+    color: #00bfff;
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
@@ -64,8 +64,8 @@ nav .container {
     left: 0;
     width: 50%;
     height: 2px;
-    background-color: var(--primary-color);
-    transition: width var(--transition-speed) ease;
+    background-color: #00bfff;
+    transition: width 0.3s ease;
 }
 
 .logo:hover::after {
@@ -83,17 +83,17 @@ nav .container {
 }
 
 .menu a {
-    color: var(--text-color);
+    color: #ffffff;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: color var(--transition-speed) ease;
+    transition: color 0.3s ease;
 }
 
 .menu a:hover {
-    color: var(--primary-color);
+    color: #00bfff;
 }
 
 .menu a::after {
@@ -103,8 +103,8 @@ nav .container {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--primary-color);
-    transition: width var(--transition-speed) ease;
+    background-color: #00bfff;
+    transition: width 0.3s ease;
 }
 
 .menu a:hover::after {
@@ -116,7 +116,7 @@ nav .container {
     background: none;
     border: none;
     font-size: 24px;
-    color: var(--text-color);
+    color: #ffffff;
     cursor: pointer;
 }
 
