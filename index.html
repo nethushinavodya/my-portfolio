@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/assignments.css">
     <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/footer.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
@@ -20,7 +21,7 @@
 </head>
 <body>
 <!-- Navigation -->
-<nav>
+<nav id="navigation">
     <div class="container">
         <div class="logo">Nethushi</div>
         <ul class="menu">
@@ -261,8 +262,8 @@
                         <span>Terminal Application</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="btn">View Project</a>
-                        <a href="#" class="btn">Source Code</a>
+                        <a href="https://github.com/nethushinavodya" class="btn">View Project</a>
+                        <a href="https://github.com/nethushinavodya" class="btn">Source Code</a>
                     </div>
                 </div>
             </div>
@@ -278,8 +279,8 @@
                         <span>Database</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="btn">View Project</a>
-                        <a href="#" class="btn">Source Code</a>
+                        <a href="https://github.com/nethushinavodya/finalProject.git" class="btn">View Project</a>
+                        <a href="https://github.com/nethushinavodya/finalProject.git" class="btn">Source Code</a>
                     </div>
                 </div>
             </div>
@@ -295,8 +296,8 @@
                         <span>Database</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="btn">View Project</a>
-                        <a href="#" class="btn">Source Code</a>
+                        <a href="https://github.com/nethushinavodya/CrystalWave-layered.git" class="btn">View Project</a>
+                        <a href="https://github.com/nethushinavodya/CrystalWave-layered.git" class="btn">Source Code</a>
                     </div>
                 </div>
             </div>
@@ -426,5 +427,16 @@
         </div>
     </div>
 </footer>
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const menu = document.querySelector(".menu");
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+
+        menuBtn.style.cssText = "position: fixed; top: 20px; right: 20px; background-color: transparent; border: none; font-size: 24px; color: #ffffff; cursor: pointer; z-index: 1000;";
+        menu.style.cssText = "background-color: rgba(10, 10, 10, 0.9); transition: right 0.3s ease;";
+    </script>
 </body>
 </html>
