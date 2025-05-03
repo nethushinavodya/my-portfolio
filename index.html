@@ -429,16 +429,16 @@
     </div>
 </footer>
     <script>
-        const menuItems = document.querySelectorAll('.menu li');
+        const menuLists = document.querySelectorAll('.menu li');
         const menuCheckbox = document.querySelector('.menu-checkbox');
         const menu = document.querySelector('.menu');
 
-        menuItems.forEach((item) => {
-            item.addEventListener('click', () => {
+        menuLists.forEach((list) => {
+            list.addEventListener('click', () => {
                 // Close the menu
                 menuCheckbox.checked = false;
                 // Go to the corresponding page
-                const href = item.querySelector('a').getAttribute('href');
+                const href = list.querySelector('a').getAttribute('href');
                 window.location.href = href;
             });
         });
