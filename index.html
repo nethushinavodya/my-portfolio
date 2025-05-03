@@ -429,12 +429,19 @@
     </div>
 </footer>
     <script>
-        /*const menuBtn = document.querySelector(".menu-btn");
-        const menu = document.querySelector(".menu");
+        const menuItems = document.querySelectorAll('.menu li');
+        const menuCheckbox = document.querySelector('.menu-checkbox');
+        const menu = document.querySelector('.menu');
 
-        menuBtn.addEventListener("click", () => {
-            menu.classList.toggle("active");
-        });*/
+        menuItems.forEach((item) => {
+            item.addEventListener('click', () => {
+                // Close the menu
+                menuCheckbox.checked = false;
+                // Go to the corresponding page
+                const href = item.querySelector('a').getAttribute('href');
+                window.location.href = href;
+            });
+        });
     </script>
 </body>
 </html>
