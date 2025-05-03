@@ -24,6 +24,8 @@
 <nav id="navigation">
     <div class="container">
         <div class="logo">Nethushi</div>
+        <input type="checkbox" class="menu-checkbox" id="menu-checkbox">
+        <label class="menu-btn" for="menu-checkbox"></label>
         <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
@@ -33,7 +35,6 @@
             <li><a href="#assignments">Assignments</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="menu-btn">☰</button>
     </div>
 </nav>
 
@@ -428,15 +429,12 @@
     </div>
 </footer>
     <script>
-        const menuBtn = document.querySelector(".menu-btn");
+        /*const menuBtn = document.querySelector(".menu-btn");
         const menu = document.querySelector(".menu");
 
         menuBtn.addEventListener("click", () => {
             menu.classList.toggle("active");
-        });
-
-        menuBtn.style.cssText = "position: fixed; top: 20px; right: 20px; background-color: transparent; border: none; font-size: 24px; color: #ffffff; cursor: pointer; z-index: 1000;";
-        menu.style.cssText = "background-color: rgba(10, 10, 10, 0.9); transition: right 0.3s ease;";
+        });*/
     </script>
 </body>
 </html>
