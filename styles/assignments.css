@@ -12,7 +12,6 @@
 }
 #assignmentImage{
     animation: floatAnimation 4s ease-in-out infinite;
-
 }
 .assignments-content {
     display: grid;
@@ -75,4 +74,31 @@
 
 .assignment-box .btn {
     margin: 0 auto;
+}
+
+
+.assignment-links {
+    display: flex;
+    gap: 15px;
+}
+
+.assignment-links .btn {
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+/*response the btn*/
+
+@media screen and (max-width: 768px) {
+    .assignment-box .btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .assignment-box .btn {
+        padding: 8px 15px;
+        font-size: 10px;
+    }
 }
