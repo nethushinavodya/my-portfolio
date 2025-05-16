@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -56,8 +57,8 @@
 </section>
 
 <!-- About Me Section -->
-<section id="about">
-    <div class="container">
+<section id="about" >
+    <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
             <div class="about-img">
@@ -93,13 +94,13 @@
 </section>
 
 <!-- Skills Section -->
-<section id="skills">
-    <div class="container">
+<section id="skills" >
+    <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
         <h2 class="section-title">My Skills</h2>
         <img id="image" src="assets/images/1.png">
 
         <div class="skills-content">
-            <div class="skill-box">
+            <div class="skill-box"  data-aos="flip-right" data-aos-duration="2000">
                 <div class="skill-title">
                     <div class="skill-img">
                         <img src="assets/images/HTML.png" alt="HTML">
@@ -111,7 +112,7 @@
                 </div>
             </div>
 
-            <div class="skill-box">
+            <div class="skill-box" data-aos="flip-left" data-aos-duration="2000">
                 <div class="skill-title">
                     <div class="skill-img">
                         <img src="assets/images/CSS.png" alt="CSS">
@@ -123,7 +124,7 @@
                 </div>
             </div>
 
-            <div class="skill-box">
+            <div class="skill-box" data-aos="flip-right" data-aos-duration="2000">
                 <div class="skill-title">
                     <div class="skill-img">
                         <img src="assets/images/JS.png" alt="JavaScript">
@@ -135,7 +136,7 @@
                 </div>
             </div>
 
-            <div class="skill-box">
+            <div class="skill-box" data-aos="flip-left" data-aos-duration="2000">
                 <div class="skill-title">
                     <div class="skill-img">
                         <img src="assets/images/Java.png" alt="Java">
@@ -147,7 +148,7 @@
                 </div>
             </div>
 
-            <div class="skill-box">
+            <div class="skill-box" data-aos="flip-right" data-aos-duration="2000">
                 <div class="skill-title">
                     <div class="skill-img">
                         <img src="assets/images/MySQL.png" alt="MySQL">
@@ -159,7 +160,7 @@
                 </div>
             </div>
 
-            <div class="skill-box">
+            <div class="skill-box" data-aos="flip-left" data-aos-duration="2000">
                 <div class="skill-title">
                     <div class="skill-img">
                         <img src="assets/images/Git.png" alt="GitHub">
@@ -171,7 +172,7 @@
                 </div>
             </div>
 
-            <div class="skill-box">
+            <div class="skill-box" data-aos="flip-right" data-aos-duration="2000">
                 <div class="skill-title">
                     <div class="skill-img">
                         <img src="assets/images/VS.png" alt="VS Code">
@@ -183,7 +184,7 @@
                 </div>
             </div>
 
-            <div class="skill-box">
+            <div class="skill-box" data-aos="flip-left" data-aos-duration="2000">
                 <div class="skill-title">
                     <div class="skill-img">
                         <img src="assets/images/btstrap.png" alt="Bootstrap">
@@ -195,7 +196,7 @@
                 </div>
             </div>
 
-            <div class="skill-box">
+            <div class="skill-box" data-aos="flip-right" data-aos-duration="2000">
                 <div class="skill-title">
                     <div class="skill-img">
                         <img src="assets/images/Capcut.png" alt="Capcut">
@@ -211,7 +212,8 @@
 </section>
 
 <!-- Education Section -->
-<section id="education">
+<section id="education" data-aos="fade-up"
+         data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
     <div class="container">
         <h2 class="section-title">Education</h2>
         <img src="assets/images/7.png">
@@ -248,8 +250,8 @@
 </section>
 
 <!-- Projects Section -->
-<section id="projects">
-    <div class="container">
+<section id="projects" >
+    <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
         <h2 class="section-title">My Projects</h2>
         <img id="projectImage" src="assets/images/8.png">
         <div class="projects-content">
@@ -307,10 +309,10 @@
 </section>
 
 <!-- Assignments Section -->
-<section id="assignments">
-    <div class="container">
+<section id="assignments" >
+    <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
         <h2 class="section-title">Assignments</h2>
-        <img src="assets/images/2.png">
+        <img id="assignmentImage" src="assets/images/2.png">
         <div class="assignments-content">
             <div class="assignment-box">
                 <h3>Assignment 1</h3>
@@ -461,5 +463,9 @@
             });
         });
     </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
