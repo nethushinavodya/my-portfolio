@@ -12,6 +12,7 @@
 }
 #assignmentImage{
     animation: floatAnimation 4s ease-in-out infinite;
+
 }
 .assignments-content {
     display: grid;
