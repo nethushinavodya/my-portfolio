@@ -83,14 +83,35 @@
 }
 
 .assignment-links .btn {
-    padding: 8px 15px;
-    font-size: 14px;
+    padding: 8px 12px;
+    font-size: 12px;
 }
 
+.arrow-btn {
+    background-color: black;
+    cursor: pointer;
+    color: #00bfff;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+#source-code-btn {
+    display: inline-block;
+    width: 20px; /* adjust the width to fit the text */
+    text-align: center;
+    writing-mode: vertical-rl; /* this is the key to vertical text */
+    transform: rotate(180deg); /* optional, to make the text read from top to bottom */
+}
 /*response the btn*/
 
 @media screen and (max-width: 768px) {
-    .assignment-box .btn {
+    .assignment-box . btn {
         padding: 8px 15px;
         font-size: 12px;
     }
@@ -100,5 +121,12 @@
     .assignment-box .btn {
         padding: 8px 15px;
         font-size: 10px;
+    }
+}
+/*laptop*/
+@media screen and (max-width: 1024px) {
+    .assignment-box .btn {
+        padding: 8px 15px;
+        font-size: 12px;
     }
 }

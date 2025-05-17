@@ -58,7 +58,7 @@
 
 <!-- About Me Section -->
 <section id="about" >
-    <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+    <div class="container">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
             <div class="about-img">
@@ -95,7 +95,7 @@
 
 <!-- Skills Section -->
 <section id="skills" >
-    <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+    <div class="container">
         <h2 class="section-title">My Skills</h2>
         <img id="image" src="assets/images/1.png">
 
@@ -212,8 +212,7 @@
 </section>
 
 <!-- Education Section -->
-<section id="education" data-aos="fade-up"
-         data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+<section id="education">
     <div class="container">
         <h2 class="section-title">Education</h2>
         <img src="assets/images/7.png">
@@ -251,7 +250,7 @@
 
 <!-- Projects Section -->
 <section id="projects" >
-    <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+    <div class="container">
         <h2 class="section-title">My Projects</h2>
         <img id="projectImage" src="assets/images/8.png">
         <div class="projects-content">
@@ -307,7 +306,7 @@
 
 <!-- Assignments Section -->
 <section id="assignments" >
-    <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+    <div class="container">
         <h2 class="section-title">Assignments</h2>
         <img id="assignmentImage" src="assets/images/2.png">
         <div class="assignments-content">
@@ -333,8 +332,43 @@
                 <h3>Assignment 3</h3>
                 <p>Usage of Cascade Style Sheets</p>
                 <div class="assignment-links">
-                    <a href="#" class="btn">View Assignment</a>
-                    <a href="https://github.com/nethushinavodya" class="btn">Source Code</a>
+                    <div class="project-tags">
+                        <span> Preview Assignment</span>
+                    </div>
+                        <div class="slide" id="preview1">
+                            <a href="Assignment_03/Case_01.html" class="btn">Case 01</a>
+                        </div>
+                        <div class="slide" id="preview2">
+                            <a href="Assignment_03/Case_02.html" class="btn">Case 02</a>
+                        </div>
+                        <div class="slide" id="preview3">
+                            <a href="Assignment_03/Case_03.html" class="btn">Case 03</a>
+                        </div>
+                        <div class="slide" id="preview4">
+                            <a href="Assignment_03/Case_04.html" class="btn">Case 04</a>
+                        </div>
+                        <div class="slide" id="preview5">
+                            <a href="Assignment_03/Case_05.html" class="btn">Case 05</a>
+                        </div>
+                        <div class="slide" id="preview6">
+                            <a href="Assignment_03/Case_06.html" class="btn">Case 06</a>
+                        </div>
+
+                    <button class="arrow-btn next-btn" onclick="plusSlides(1)"><i class="fas fa-arrow-right"></i></button>
+                </div>
+
+                <div class="project-tags">
+                    <span> Get Source Code</span>
+                </div>
+                <div class="assignment-links">
+                    <div id="source-code">
+                        <a href="Assignment_03/Case-01.html" class="btn">Case 01 </a>
+                        <a href="Assignment_03/Case-02.html" class="btn">Case 02</a>
+                        <a href="Assignment_03/Case-03.html" class="btn">Case 03</a>
+                        <a href="Assignment_03/Case-04.html" class="btn">Case 04</a>
+                        <a href="Assignment_03/Case-05.html" class="btn">Case 05</a>
+                        <a href="Assignment_03/Case-06.html" class="btn">Case 06</a>
+                    </div>
                 </div>
             </div>
 
@@ -463,21 +497,40 @@
         </div>
     </div>
 </footer>
-    <script>
-        const menuLists = document.querySelectorAll('.menu li');
-        const menuCheckbox = document.querySelector('.menu-checkbox');
-        const menu = document.querySelector('.menu');
+<script>
+    const menuLists = document.querySelectorAll('.menu li');
+    const menuCheckbox = document.querySelector('.menu-checkbox');
+    const menu = document.querySelector('.menu');
 
-        menuLists.forEach((list) => {
-            list.addEventListener('click', () => {
-                // Close the menu
-                menuCheckbox.checked = false;
-                // Go to the corresponding page
-                const href = list.querySelector('a').getAttribute('href');
-                window.location.href = href;
-            });
+    menuLists.forEach((list) => {
+        list.addEventListener('click', () => {
+            // Close the menu
+            menuCheckbox.checked = false;
+            // Go to the corresponding page
+            const href = list.querySelector('a').getAttribute('href');
+            window.location.href = href;
         });
-    </script>
+    });
+</script>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
