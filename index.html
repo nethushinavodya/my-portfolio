@@ -399,7 +399,7 @@
                         <a href="Assignment_04/Case_06.html" class="btn">Case 06</a>
                     </div>
 
-                    <button class="arrow-btn next-btn" onclick="plusSlides(1)"><i class="fas fa-arrow-right"></i></button>
+                    <button class="arrow-btn next-btn" onclick="plusSlides2(1)"><i class="fas fa-arrow-right"></i></button>
                 </div>
 
                 <div class="project-tags">
@@ -419,9 +419,9 @@
 
             <div class="assignment-box">
                 <h3>Assignment 5</h3>
-                <p></p>
+                <p>CSS Frameworks Usage</p>
                 <div class="assignment-links">
-                    <a href="#" class="btn">View Assignment</a>
+                    <a href="https://github.com/nethushinavodya/POS-System.git" class="btn">View Assignment</a>
                     <a href="https://github.com/nethushinavodya" class="btn">Source Code</a>
                 </div>
             </div>
@@ -548,21 +548,7 @@
         });
     });
 </script>
-<script>
-    const menuLists = document.querySelectorAll('.menu li');
-    const menuCheckbox = document.querySelector('.menu-checkbox');
-    const menu = document.querySelector('.menu');
 
-    menuLists.forEach((list) => {
-        list.addEventListener('click', () => {
-            // Close the menu
-            menuCheckbox.checked = false;
-            // Go to the corresponding page
-            const href = list.querySelector('a').getAttribute('href');
-            window.location.href = href;
-        });
-    });
-</script>
 <script>
     var slideIndex = 1;
     showSlides(slideIndex);
@@ -573,13 +559,32 @@
 
     function showSlides(n) {
         var i;
-        var slides = document.getElementsByClassName("slide2");
+        var slides = document.getElementsByClassName("slide");
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
         slides[slideIndex-1].style.display = "block";
+    }
+</script>
+<script>
+    var slideIndex2 = 1;
+    showSlides2(slideIndex2);
+
+    function plusSlides2(n) {
+        showSlides2(slideIndex2 += n);
+    }
+
+    function showSlides2(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide2");
+        if (n > slides.length) {slideIndex2 = 1}
+        if (n < 1) {slideIndex2 = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex2-1].style.display = "block";
     }
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
