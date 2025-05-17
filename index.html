@@ -325,7 +325,7 @@
                 <p>Implement the mockup structure using HTML</p>
                 <div class="assignment-links">
                     <a href="Assignment_02/portfolio.html" class="btn">View Assignment</a>
-                    <a href="https://github.com/nethushinavodya" class="btn">Source Code</a>
+                    <a href="Assignment_02/portfolioCode.html" class="btn">Source Code</a>
                 </div>
             </div>
 
@@ -362,7 +362,7 @@
                     <span> Get Source Code</span>
                 </div>
                 <div class="assignment-links">
-                    <div id="source-code">
+                    <div class="source-code">
                         <a href="Assignment_03/Case-01.html" class="btn">Case 01 </a>
                         <a href="Assignment_03/Case-02.html" class="btn">Case 02</a>
                         <a href="Assignment_03/Case-03.html" class="btn">Case 03</a>
@@ -375,10 +375,45 @@
 
             <div class="assignment-box">
                 <h3>Assignment 4</h3>
-                <p></p>
+                <p>Transition & Animation </p>
                 <div class="assignment-links">
-                    <a href="#" class="btn">View Assignment</a>
-                    <a href="https://github.com/nethushinavodya" class="btn">Source Code</a>
+                    <div class="project-tags">
+                        <span> Preview Assignment</span>
+                    </div>
+                    <div class="slide2" >
+                        <a href="Assignment_04/Case_01.html" class="btn">Case 01</a>
+                    </div>
+                    <div class="slide2">
+                        <a href="Assignment_04/Case_02.html" class="btn">Case 02</a>
+                    </div>
+                    <div class="slide2" >
+                        <a href="Assignment_04/Case_03.html" class="btn">Case 03</a>
+                    </div>
+                    <div class="slide2">
+                        <a href="Assignment_04/Case_04.html" class="btn">Case 04</a>
+                    </div>
+                    <div class="slide2">
+                        <a href="Assignment_04/Case_05.html" class="btn">Case 05</a>
+                    </div>
+                    <div class="slide2">
+                        <a href="Assignment_04/Case_06.html" class="btn">Case 06</a>
+                    </div>
+
+                    <button class="arrow-btn next-btn" onclick="plusSlides(1)"><i class="fas fa-arrow-right"></i></button>
+                </div>
+
+                <div class="project-tags">
+                    <span> Get Source Code</span>
+                </div>
+                <div class="assignment-links">
+                    <div id="source-code">
+                        <a href="Assignment_04/Case-01.html" class="btn">Case 01 </a>
+                        <a href="Assignment_04/Case-02.html" class="btn">Case 02</a>
+                        <a href="Assignment_04/Case-03.html" class="btn">Case 03</a>
+                        <a href="Assignment_04/Case-04.html" class="btn">Case 04</a>
+                        <a href="Assignment_04/Case-05.html" class="btn">Case 05</a>
+                        <a href="Assignment_04/Case-06.html" class="btn">Case 06</a>
+                    </div>
                 </div>
             </div>
 
@@ -514,6 +549,21 @@
     });
 </script>
 <script>
+    const menuLists = document.querySelectorAll('.menu li');
+    const menuCheckbox = document.querySelector('.menu-checkbox');
+    const menu = document.querySelector('.menu');
+
+    menuLists.forEach((list) => {
+        list.addEventListener('click', () => {
+            // Close the menu
+            menuCheckbox.checked = false;
+            // Go to the corresponding page
+            const href = list.querySelector('a').getAttribute('href');
+            window.location.href = href;
+        });
+    });
+</script>
+<script>
     var slideIndex = 1;
     showSlides(slideIndex);
 
@@ -523,7 +573,7 @@
 
     function showSlides(n) {
         var i;
-        var slides = document.getElementsByClassName("slide");
+        var slides = document.getElementsByClassName("slide2");
         if (n > slides.length) {slideIndex = 1}
         if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
