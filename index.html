@@ -406,7 +406,7 @@
                     <span> Get Source Code</span>
                 </div>
                 <div class="assignment-links">
-                    <div id="source-code">
+                    <div class="source-code">
                         <a href="Assignment_04/Case-01.html" class="btn">Case 01 </a>
                         <a href="Assignment_04/Case-02.html" class="btn">Case 02</a>
                         <a href="Assignment_04/Case-03.html" class="btn">Case 03</a>
@@ -430,8 +430,26 @@
                 <h3>Assignment 6</h3>
                 <p>DOM Manipulation With JS</p>
                 <div class="assignment-links">
-                    <a href="#" class="btn">View Assignment</a>
-                    <a href="https://github.com/nethushinavodya" class="btn">Source Code</a>
+                    <div class="project-tags">
+                        <span> Preview Assignment</span>
+                    </div>
+                    <div class="slide3" >
+                        <a href="Assignment_06/Case_01.html" class="btn">Case 01</a>
+                    </div>
+                    <div class="slide3">
+                        <a href="Assignment_06/Case_02.html" class="btn">Case 02</a>
+                    </div>
+                    <button class="arrow-btn next-btn" onclick="plusSlides3(1)"><i class="fas fa-arrow-right"></i></button>
+                </div>
+
+                <div class="project-tags">
+                    <span> Get Source Code</span>
+                </div>
+                <div class="assignment-links">
+                    <div class="source-code">
+                        <a href="Assignment_04/Case-01.html" class="btn">Case 01 </a>
+                        <a href="Assignment_04/Case-02.html" class="btn">Case 02</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -585,6 +603,25 @@
             slides[i].style.display = "none";
         }
         slides[slideIndex2-1].style.display = "block";
+    }
+</script>
+<script>
+    var slideIndex3 = 1;
+    showSlides3(slideIndex3);
+
+    function plusSlides3(n) {
+        showSlides3(slideIndex3 += n);
+    }
+
+    function showSlides3(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide3");
+        if (n > slides.length) {slideIndex3 = 1}
+        if (n < 1) {slideIndex3 = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex3-1].style.display = "block";
     }
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
