@@ -631,6 +631,18 @@
         slides[slideIndex3-1].style.display = "block";
     }
 </script>
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+
+        const mailtoLink = `mailto:nethushiperera03@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+
+        window.location.href = mailtoLink;
+        alert('Your message has been sent!');
+    });
+</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
